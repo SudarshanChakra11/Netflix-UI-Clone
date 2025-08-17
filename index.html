@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Sign-Up Page with FAQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="hindi">Hindi</option>
+        </select>
+        <button>Sign In</button>
+    </div>
+
+    <div class="background">
+        <div class="overlay">
+            <div class="content">
+                <img src="images/netflix.png" alt="Netflix Logo" class="logo">
+                <h1>Unlimited movies, TV shows and more</h1>
+                <p>Starts at ₹149. Cancel at any time.</p>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <form class="email-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit">Get Started > </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="carousel-section">
+        <h2 class="section-title">Trending Now</h2>
+
+        <div class="carousel-wrapper">
+            <div class="arrow arrow-left" onclick="moveLeft()">&#8249;</div> 
+            <div class="carousel-track" id="carousel-track">
+                <div class="carousel-card">
+                    <img src="images/poster1.jpg" alt="Sector 36">
+                    <div class="card-number">1</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+                <div class="carousel-card">
+                    <img src="images/poster2.jpg" alt="Mr Bachchan">
+                    <div class="card-number">2</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+                <div class="carousel-card">
+                    <img src="images/poster3.jpeg" alt="Bad Boys">
+                    <div class="card-number">3</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+                <div class="carousel-card">
+                    <img src="images/poster4.jpg" alt="Rebel Ridge">
+                    <div class="card-number">4</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+                <div class="carousel-card">
+                    <img src="images/poster5.jpg" alt="New Movie">
+                    <div class="card-number">5</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+                <div class="carousel-card">
+                    <img src="images/poster6.jpg" alt="Movie 6">
+                    <div class="card-number">6</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+                <div class="carousel-card">
+                    <img src="images/poster7.jpg" alt="Movie 7">
+                    <div class="card-number">7</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+                <div class="carousel-card">
+                    <img src="images/poster8.jpg" alt="Movie 8">
+                    <div class="card-number">8</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+                <div class="carousel-card">
+                    <img src="images/poster9.jpeg" alt="Movie 9">
+                    <div class="card-number">9</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+                <div class="carousel-card">
+                    <img src="images/poster10.jpg" alt="Movie 10">
+                    <div class="card-number">10</div>
+                    <div class="card-info">
+                        <span>Recently added</span>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow arrow-right" onclick="moveRight()">&#8250;</div> 
+        </div>
+    </div>
+
+
+
+
+    <div class="section-features">
+        <h2 class="section-title">More reasons to join</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-title">Enjoy on your TV</span>
+                <p class="feature-description">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+                    players and more.</p>
+                <img src="images/tv.png" class="feature-icon">
+            </div>
+            <div class="feature-card">
+                <span class="feature-title">Download your shows to watch offline</span>
+                <p class="feature-description">Save your favourites easily and always have something to watch.</p>
+                <img src="images/download.png" class="feature-icon">
+            </div>
+            <div class="feature-card">
+                <span class="feature-title">Watch everywhere</span>
+                <p class="feature-description">Stream unlimited movies and TV shows on your phone, tablet, laptop and
+                    TV.</p>
+                <img src="images/celebration.png" class="feature-icon">
+            </div>
+            <div class="feature-card">
+                <span class="feature-title">Create profiles for kids</span>
+                <p class="feature-description">Send kids on adventures with their favourite characters in a space made
+                    just for them — free with your membership.</p>
+                <img src="images/profile.png" class="feature-icon">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section-faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-entry">
+                <div class="faq-question">
+                    <span class="question-text">What is Netflix?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                    documentaries, and more – on thousands of internet-connected devices.
+                    You can watch as much as you want, whenever you want, without a single ad – all for one low monthly
+                    price. There's always something new to discover, and new TV shows and movies are added every week!
+                </div>
+            </div>
+
+            <div class="faq-entry">
+                <div class="faq-question">
+                    <span class="question-text">How much does Netflix cost?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                    monthly fee. Plans range from ₹149 to ₹649 a month.
+                </div>
+            </div>
+
+            <div class="faq-entry">
+                <div class="faq-question">
+                    <span class="question-text">Where can I watch?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to
+                    watch
+                    instantly on the web at netflix.com from your personal computer or on any internet-connected device
+                    that
+                    offers the Netflix app.
+                </div>
+            </div>
+
+            <div class="faq-entry">
+                <div class="faq-question">
+                    <span class="question-text">How do I cancel?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your
+                    account
+                    online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                </div>
+            </div>
+
+
+            <div class="faq-entry">
+                <div class="faq-question">
+                    <span class="question-text">What can I watch on Netflix?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+                    Netflix originals, and more. Watch as much as you want, anytime you want.
+                </div>
+            </div>
+
+            <div class="faq-entry">
+                <div class="faq-question">
+                    <span class="question-text">Is Netflix good for kids?</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                    family-friendly TV shows and movies in their own space.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="subscription-section">
+        <p class="subscription-text">Ready to watch? Enter your email to create or restart your membership.</p>
+        <form class="subscription-form">
+            <input type="email" class="email-input" placeholder="Email address" required>
+            <button type="submit" class="submit-button">Get Started ></button>
+        </form>
+    </div>
+
+
+
+    <div class="site-footer">
+        <p class="footer-title">Questions? Call 000-800-919-1694</p>
+
+
+        <div class="footer-links">
+            <div class="footer-link-group">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class="footer-link-group">
+                <a href="#">Help Centre</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="footer-link-group">
+                <a href="#">Account</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+            <div class="footer-link-group">
+                <a href="#">Media Centre</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="language-dropdown">
+            <select class="language-select">
+                <option value="en">🌐 English</option>
+                <option value="hindi">Hindi</option>
+            </select>
+        </div>
+
+
+        <div class="footer-copyright">
+            <p>Netflix India</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
